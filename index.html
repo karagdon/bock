@@ -7,37 +7,13 @@
 <body>
 <div ID="timeClockA">
    
-        <div ID="timeLabel" style="font-size:24pt;font-weight:bold;">0.00</div>
+	<div ID="timeLabel" style="font-size:24pt;font-weight:bold;">4:59</div>
         <input type="button" onclick="ActivateTimer();" value="Activate" />
-        <script language="javascript" type="text/javascript">
-            var min = 1;
-            var sec = 59;
-            var timer;
-            var timeon = 0;
-            function ActivateTimer() {
-                if (!timeon) {
-                    timeon = 1;
-                    Timer();
-                }
-            }
-            function Timer() {
-
-                var _time = min + ":" + sec;
-                document.getElementById("timeLabel").innerHTML =_time;
-                if (_time != "0:0") {
-
-                    if (sec == 0) {
-                        min = min - 1;
-                        sec = 59;
-                    } else {
-                        sec = sec - 1;
-                    }
-                    timer = setTimeout("Timer()", 1000);
-                }
-                else {
-                    alert("Time is Over");
-                }
-            }</script>
+		<input type="button" onclick="Stop();" value="STAHP" />
+		<input type="button" onclick="Reset();" value="RESET" />
+			<div ID="pauseLabel" style="font-size:24pt;font-weight:bold;font-color:#ff0000"></div>
+        <script type="text/javascript" src="timer.js">          
+			</script>
 </div>
 </body>
 </html>
