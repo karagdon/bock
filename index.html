@@ -3,10 +3,23 @@
 <title> BOCK: A Board Game Clock
 </title>
 <link rel="stylesheet" type="text/css" href="style.css">
-<script type"text/javascript">
-Some javascripts here!
-</script>
+</head>
 <body>
-There will be a boardgame clock here soon!
+<div ID="timeClockA">
+   
+   
+	<div ID="timeLabel" style="font-size:24pt;font-weight:bold;">05:00</div>
+        <input type="button" onclick="ActivateTimer();" value="START" />
+		<input type="button" onclick="Stop();" value="STAHP" />
+		<input type="button" onclick="Reset();" value="RESET" />
+			<div ID="statusLabel" style="font-size:24pt;font-weight:bold;font-color:#ff0000"></div>
+	
+
+			
+        <script type="text/javascript" src="timer.js">          
+			</script>
+			
+			
+</div>
 </body>
 </html>
