@@ -1,12 +1,17 @@
 <html>
 <head>
-<title> BOCK: A Board Game Clock
-</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+    <script src="bock.js"></script>
+    <title> BOCK: A Board Game Clock </title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="style.css">
-<script type"text/javascript">
-Some javascripts here!
-</script>
-<body>
-There will be a boardgame clock here soon!
+<body onload="window.bock.ui.init();">
+    <div class="screen">
+        <div class="header">
+            <span style="color: yellow;" class="clickable" onclick="window.bock.ui.onBackButtonPress();" >&nbsp;&lt;</span> <span id="currentPage"></span>
+        </div>
+        <div id="content">
+        </div>
+    </div>
 </body>
 </html>
