@@ -1,0 +1,31 @@
+{
+    "games": {
+        "dungeonsanddragonsboardgame" : {
+            "title" : "D&D The Board Game",
+            "timers" : {
+                "playerAction" : {
+                    "title" : "Player Movement/Action",
+                    "time" : 60
+                },
+                "monsterAction" : {
+                    "title" : "Monster Action",
+                    "time" : 60
+                }
+            }
+        },
+
+        "gameofthrones" : {
+            "title" : "A Game of Thrones",
+            "timers" : {
+                "planningStage" : {
+                    "title" : "Planning Stage",
+                    "time" : 300
+                },
+                "marshalling" : {
+                    "title" : "Marshalling Troops",
+                    "time" : 60
+                }
+            }
+        }
+    }
+}

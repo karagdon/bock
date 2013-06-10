@@ -1,2 +1,80 @@
-p {
+body,html {
+    height:100%;
+    overflow: hidden;
+    /* Disable text highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    background-color: #222222;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+.screen {
+    height: 100%;
+    overflow: hidden;
+    border-spacing: 0;
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    font-size: 1.5em;
+    background-color: #000000;
+    z-index: 10000;
+}
+
+.anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.menuItem {
+    display: block;
+    border-bottom: 1px solid #333333;
+    background-color: #222222;
+    padding: 8px;
+    margin: 0;
+}
+
+.menuItem:hover { 
+    background-color: #333333;
+    color: yellow; 
+}
+
+.contentPage {
+    display: none;
+    overflow: scroll;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contentPage::-webkit-scrollbar { 
+    display: none; 
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
 }
